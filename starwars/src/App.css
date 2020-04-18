@@ -1,8 +1,56 @@
-.App {
+.root {
+  background: none !important;
+}
+.container {
+  margin: 0 auto;
+  height: auto;
+  
+}
+
+h1 {
   text-align: center;
 }
-.Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+
+.card {
+  height: 445px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 1px solid #007BFF
 }
-/* write your parent styles in here for your App.js */
+
+.card h3 {
+  padding: 0 20px;
+}
+
+.card-title {
+  background: #007BFF;
+  color: #ffee06;
+  padding: 15px 0;
+  text-shadow: 0 0 8px #0f4988, 0 0 10px #08085a;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body .info {
+  height: 100%;
+  padding: 15px 0;
+  font-size: 15px;
+  text-align: left;
+}
+.card-text {
+  margin-bottom: 2px;
+}
+.btn-link {
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .page_nav button{
+    width: 20% !important;
+    padding: 6px 6px;
+  }
+}
