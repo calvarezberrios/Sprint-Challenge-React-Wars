@@ -58,7 +58,7 @@ const Character = ({ pokemon }) => {
                     <Modal isOpen={statModal} toggle={toggleStat} className="popup">
                         <ModalHeader toggle={toggleStat}>{pokemonData.name[0].toUpperCase()+pokemonData.name.slice(1)} Stats:</ModalHeader>
                         <ModalBody>
-                            {pokemonData.stats.map(obj => <li><strong>{`${obj.stat.name[0].toUpperCase()}${obj.stat.name.slice(1)}:`}</strong>  {` ${obj.base_stat} with ${obj.effort} effort`}</li>)}
+                            {pokemonData.stats.map((obj, index) => <li key = {index}><strong>{`${obj.stat.name[0].toUpperCase()}${obj.stat.name.slice(1)}:`}</strong>  {` ${obj.base_stat} with ${obj.effort} effort`}</li>)}
                         </ModalBody>
                         <ModalFooter>
                             <Button color="primary" onClick={toggleStat}>Close</Button>{' '}
@@ -71,7 +71,7 @@ const Character = ({ pokemon }) => {
                     <Modal isOpen={movesModal} toggle={toggleMoves} className="popup">
                         <ModalHeader toggle={toggleMoves}>{pokemonData.name[0].toUpperCase()+pokemonData.name.slice(1)} Moves:</ModalHeader>
                         <ModalBody>
-                            {pokemonData.moves.map(obj => <li>{`${obj.move.name[0].toUpperCase()}${obj.move.name.slice(1)}`}</li>)}
+                            {pokemonData.moves.map((obj, index) => <li key = {index}>{`${obj.move.name[0].toUpperCase()}${obj.move.name.slice(1)}`}</li>)}
                         </ModalBody>
                         <ModalFooter>
                             <Button color="primary" onClick={toggleMoves}>Close</Button>{' '}
@@ -84,7 +84,7 @@ const Character = ({ pokemon }) => {
                     <Modal isOpen={abilitiesModal} toggle={toggleAbilities} className="popup">
                         <ModalHeader toggle={toggleAbilities}>{pokemonData.name[0].toUpperCase()+pokemonData.name.slice(1)} Abilities:</ModalHeader>
                         <ModalBody>
-                            {pokemonData.abilities.map(obj => <li>{`${obj.ability.name[0].toUpperCase()}${obj.ability.name.slice(1)}`}</li>)}
+                            {pokemonData.abilities.map((obj, index) => <li key = {index}>{`${obj.ability.name[0].toUpperCase()}${obj.ability.name.slice(1)}`}</li>)}
                         </ModalBody>
                         <ModalFooter>
                             <Button color="primary" onClick={toggleAbilities}>Close</Button>{' '}
