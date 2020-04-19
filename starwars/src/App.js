@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import './App.css';
 import { Container, Row, Col, Spinner } from 'reactstrap';
 import Character from "./components/Character";
 import Pages from "./components/Pages";
 import pokemon from "./images/pokemon_logo.png";
-import './App.css';
+
 
 
 function App() {
