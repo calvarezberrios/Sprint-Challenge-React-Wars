@@ -25,7 +25,7 @@ function App() {
   
   
   return (
-    <div className="container">
+    <div className="App">
       
       <h1>
         <img src = {pokemon} alt = "Pokemon Logo" width = "60%"  />
