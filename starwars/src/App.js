@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Spinner } from 'reactstrap';
 import Character from "./components/Character";
 import Pages from "./components/Pages";
