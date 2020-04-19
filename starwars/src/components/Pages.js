@@ -16,10 +16,10 @@ const Pages = ({ pokemonData, setOffset }) => {
 
     return (
         <PagesBtns className = "page_nav">
-            <Button color="danger" onClick = {() => setOffset("")}>First</Button>{' '}
-            <Button color="danger" onClick = {() => pokemonData.previous ? setOffset(pokemonData.previous.slice(pokemonData.previous.indexOf("?"))) : null}>Prev</Button>{' '}
-            <Button color="danger" onClick = {() => pokemonData.next ? setOffset(pokemonData.next.slice(pokemonData.next.indexOf("?"))) : null}>Next</Button>{' '}
-            <Button color="danger" onClick = {() => setOffset(`?offset=${pokemonData.count - 20}&limit=20`)}>Last</Button>
+            <Button color="primary" onClick = {() => setOffset("")}>First</Button>{' '}
+            <Button color="primary" onClick = {() => pokemonData.previous ? setOffset(pokemonData.previous.slice(pokemonData.previous.indexOf("?"))) : null}>Prev</Button>{' '}
+            <Button color="primary" onClick = {() => pokemonData.next ? setOffset(pokemonData.next.slice(pokemonData.next.indexOf("?"))) : null}>Next</Button>{' '}
+            <Button color="primary" onClick = {() => setOffset(`?offset=${pokemonData.count - 20}&limit=20`)}>Last</Button>
         </PagesBtns>
     );
 };
